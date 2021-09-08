@@ -1,0 +1,61 @@
+/*======base rules======*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #eee;
+	font-family: "Helvetica", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1;
+}
+
+.container {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+/*======App======*/
+.header {
+	background: #fff;
+}
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px;
+	margin-bottom: 50px;
+}
+
+.appTitle {
+	display: inline-block;
+	line-height: 0;
+	color: seagreen;
+}
+.appTitle__subtitle {
+	display: block;
+	font-size: 14px;
+	margin-top: -3px;
+	text-align: right;
+	color: #123;
+}
+
+.counter {
+	background: seagreen;
+	color: #fff;
+	padding: 15px;
+	border: 1px solid #333;
+	text-transform: uppercase;
+}
+.counter--warning {
+	border: 0;
+	background: crimson;
+	color: white;
+}
